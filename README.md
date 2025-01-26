@@ -12,7 +12,9 @@ As part of my Web Development Internship at Prodigy Infotech, I built an interac
 🔹 Interactive and engaging user experience
 
 This task helped me improve my JavaScript skills, particularly in event handling, game state management, and logic implementation. Excited to continue building more interactive projects! 🚀💻
+
 Screenshots of Output
+
 ![image](https://github.com/user-attachments/assets/4957abe5-8a45-4735-85ef-ddcb2e9e014b)
 ![image](https://github.com/user-attachments/assets/e8f291be-7186-435d-94f7-a2f02990e9d0)
 ![image](https://github.com/user-attachments/assets/3dd660cd-ff2e-4e36-85a4-ab7abe23cb1d)
