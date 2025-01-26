@@ -1,0 +1,117 @@
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(to top right, #81c784, #388e3c); /* Gradient background */
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+/* Header */
+h1 {
+  margin-bottom: 30px;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+
+/* Game Mode Dropdown */
+#game-mode {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 1.1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#game-mode:hover {
+  background-color: #388e3c;
+}
+
+/* The game board */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Individual cells */
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 2px solid #333;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  border-radius: 10px;
+}
+
+.cell:hover {
+  transform: scale(1.1); /* Slight scale effect on hover */
+  background-color: rgba(255, 255, 255, 0.9); /* Lighter color on hover */
+}
+
+.cell.taken {
+  pointer-events: none;
+  background-color: #e0e0e0; /* Disabled cells */
+}
+
+/* Game status text */
+#status {
+  margin: 20px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Restart button */
+button {
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #388e3c;
+  transform: scale(1.05); /* Button scale effect */
+}
+
+/* Animations for the winning cells */
+@keyframes winAnimation {
+  0% { background-color: rgba(255, 255, 0, 0.8); }
+  50% { background-color: rgba(255, 215, 0, 0.8); }
+  100% { background-color: rgba(255, 255, 0, 0.8); }
+}
+
+/* Winning animation */
+.winning-cell {
+  animation: winAnimation 0.8s ease-out infinite;
+}
